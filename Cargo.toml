@@ -1,0 +1,15 @@
+[package]
+name = "imu_tracker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+roslibrust = { version = "0.16", features = ["rosbridge", "codegen"] }
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+roslibrust = { version = "0.16", features = ["mock"] }
+tokio = { version = "1", features = ["test-util"] }
+
+[build-dependencies]
+roslibrust = { version = "0.16", features = ["codegen"] }
